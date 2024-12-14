@@ -558,3 +558,21 @@ a:hover{
   .dropdown:hover .dropdown-cellule {
     display: block;
   }
+
+  @media (max-width: 50em){ 
+    .grille1 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .conteneur{
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+}
+
+
