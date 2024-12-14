@@ -1,0 +1,540 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grille1{
+    background-color: white;
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr min-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+    min-height: 100vh;
+}
+
+
+.grille2{
+    margin: 1em;
+    background-color: white;
+    max-width: 60em;
+    min-height: 43em;
+    border-radius: 1em;
+    display: grid;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+
+header{
+    grid-area: header;
+    background-color: rgb(21, 21, 78);
+    padding: 2em;
+}
+#titre{
+    color: white;
+    padding: 1em;
+
+}
+.site{
+    color: white;
+}
+.conteneur a{
+    color: white;
+}
+
+a{
+    color: grey;
+}
+.conteneur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.site{
+    padding: 1em;
+    
+}
+.siteEspace{
+    flex-grow: 1;
+}
+.image-profil
+{ 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 40px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    display: inline-block; 
+    
+}
+.logo{
+    background-image: url(../images/pfilogo.jpg);
+}
+
+.imageEsport{
+
+    width: 35em;
+    height: auto;
+}
+figure{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    
+}
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+}
+
+.galerie-image{
+    flex: 1 1 20em;
+    
+}
+
+.galerie-image img{
+    width: 40em; 
+    height: auto;
+}
+
+
+main{
+    grid-area: main;
+    background-color: beige;
+}
+.chic{
+    background-image: url(../images/chic.jpg);
+}
+.tableauTitre{
+    list-style: none;
+}
+.grille2 h1{
+    color: navy;
+}
+.grille2 h2{
+    color: navy;
+}
+li{
+    margin: 1em;
+}
+
+
+
+footer{
+    grid-area: footer;
+    background-color: grey;
+    padding: 2em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nom{
+    margin: 1em;
+}
+
+#infoPerso{
+    margin: 1em;
+}
+
+#interetFutur{
+    margin: 1em;
+}
+
+#image-chic{
+    float: right;
+}
+h3{
+    color: navy;
+}
+
+.grille3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "profession1 descriptionProfession1"
+        "profession2 descriptionProfession2"
+        "profession3 descriptionProfession3"
+        "profession4 descriptionProfession4"
+        "profession5 descriptionProfession5";
+
+}
+
+.cellule:nth-child(n){
+    background-color: navy;
+    border: solid grey;
+    border-collapse: collapse;
+}
+.cellule:nth-child(even){
+    background-color: white;
+    color: navy;
+    border: solid grey;
+    border-collapse: collapse;
+
+}
+.cellule{
+    border-radius: 16px;
+    width: 30em;
+    height: 10em;
+    text-align: center;
+    color: white;
+    padding: 1em; 
+    background-color: white;
+    color: navy;
+    border: solid grey;
+    border-collapse: collapse;
+}
+
+.profession1{
+    grid-area: profession1;
+}
+
+.profession2{
+    grid-area: profession2;
+}
+
+.profession3{
+    grid-area: profession3;
+}
+
+.profession4{
+    grid-area: profession4;
+}
+
+.profession5{
+    grid-area: profession5;
+}
+
+.descriptionProfession1{
+    grid-area: descriptionProfession1;
+}
+
+.descriptionProfession2{
+    grid-area: descriptionProfession2;
+}
+
+.descriptionProfession3{
+    grid-area: descriptionProfession3;
+}
+
+.descriptionProfession4{
+    grid-area: descriptionProfession4;
+}
+
+.descriptionProfession5{
+    grid-area: descriptionProfession5;
+}
+
+.nomProfession{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.horaire{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "zoneVide1 lundi mardi mercredi jeudi vendredi"
+        "heure1 mathInfoL zoneVide5 introProgMe exploitationJ zoneVide12"
+        "heure2 mathInfoL zoneVide5 introProgMe exploitationJ zoneVide12"
+        "heure3 zoneVide2 mathInfoMa zoneVide8 littératureJ webV"
+        "heure4 philoL littératureMa zoneVide8 littératureJ webV"
+        "heure5 philoL littératureMa zoneVide8 zoneVide10 webV"
+        "heure6 zoneVide3 zoneVide6 zoneVide8 introProgJ zoneVide13"
+        "heure7 introProgL exploitationMa zoneVide8 introProgJ zoneVide13"
+        "heure8 introProgL exploitationMa zoneVide8 mathInfoJ introProgV"
+        "heure9 zoneVide4 exploitationMa philoMe mathInfoJ introProgV"
+        "heure10 zoneVide4 zoneVide7 philoMe zoneVide11 zoneVide14"
+        "heure11 zoneVide4 zoneVide7 zoneVide9 zoneVide11 zoneVide14";
+
+        border: solid grey;
+        border-collapse: collapse;
+}
+
+
+
+.jourSemaine{
+    border: solid navy;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+.heureCours{
+    border: solid navy;
+    border-collapse: collapse;
+    text-align: center;
+    color: navy;
+    background-color: grey;
+}
+.coursCellule{
+    border: solid navy;
+    text-align: center;
+    color: grey;
+}
+.nomCours{
+    font-weight: bold;
+}
+.codeCours{
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+.introProgG{
+    background-color: black;
+}
+.mathInfoG{
+    background-color: navy;
+}
+.littératureG{
+    background-color: rgb(190, 188, 188);
+}
+.exploitationG{
+    background-color: rgb(75, 75, 194);
+}
+.philoG{
+    background-color: beige;
+}
+.webG{
+    background-color: rgb(90, 57, 57);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heure1{
+    grid-area: heure1;
+}
+
+.heure2{
+    grid-area: heure2;
+}
+
+.heure3{
+    grid-area: heure3;
+}
+
+.heure4{
+    grid-area: heure4;
+}
+
+.heure5{
+    grid-area: heure5;
+}
+
+.heure6{
+    grid-area: heure6;
+}
+
+.heure7{
+    grid-area: heure7;
+}
+
+.heure8{
+    grid-area: heure8;
+}
+
+.heure9{
+    grid-area: heure9;
+}
+
+.heure10{
+    grid-area: heure10;
+}
+
+.heure11{
+    grid-area: heure11;
+}
+
+
+
+.mathInfoL{
+    grid-area: mathInfoL;
+}
+.philoL{
+    grid-area: philoL;
+}
+.introProgL{
+    grid-area: introProgL;
+}
+
+
+
+.mathInfoMa{
+    grid-area: mathInfoMa;
+}
+.littératureMa{
+    grid-area: littératureMa;
+}
+.exploitationMa{
+    grid-area: exploitationMa;
+}
+
+
+
+.introProgMe{
+    grid-area: introProgMe;
+}
+.philoMe{
+    grid-area: philoMe;
+}
+
+
+.exploitationJ{
+    grid-area: exploitationJ;
+}
+.littératureJ{
+    grid-area: littératureJ;
+}
+.introProgJ{
+    grid-area: introProgJ;
+}
+.mathInfoJ{
+    grid-area: mathInfoJ;
+}
+
+
+
+.webV{
+    grid-area: webV;
+}   
+.introProgV{
+    grid-area: introProgV;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zoneVide1{
+    grid-area: zoneVide1;
+}
+
+.zoneVide2{
+    grid-area: zoneVide2;
+}
+
+.zoneVide3{
+    grid-area: zoneVide3;
+}
+
+.zoneVide4{
+    grid-area: zoneVide4;
+}
+
+.zoneVide5{
+    grid-area: zoneVide5;
+}
+
+.zoneVide6{
+    grid-area: zoneVide6;
+}
+
+.zoneVide7{
+    grid-area: zoneVide7;
+}
+
+.zoneVide8{
+    grid-area: zoneVide8;
+}
+
+.zoneVide9{
+    grid-area: zoneVide9;
+}
+
+.zoneVide10{
+    grid-area: zoneVide10;
+}
+
+.zoneVide11{
+    grid-area: zoneVide11;
+}
+
+.zoneVide12{
+    grid-area: zoneVide12;
+}
+
+.zoneVide13{
+    grid-area: zoneVide13;
+}
+
+.zoneVide14{
+    grid-area: zoneVide14;
+}
+
+
+.imgHoraire{
+    width: 35em;
+    height: auto;
+}
+a:hover{
+    color: blue;
+}
+.sourceLien{
+    color: black;
+}
+
+
+
+
+
